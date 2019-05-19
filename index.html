@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Form</title>
+    <script src="jQuery.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+    <img src="head.png" id="headimg"/>
+    <div class="info">
+        <img src="heart.png" id="icon">
+    </div>
+</header>
+<!--Form-->
+<form action="">
+    <!--Name-->
+    <section>
+        <div>姓名</div>
+        <input type="text" placeholder="姓名">
+    </section>
+    <!--Phone-->
+    <section>
+        <div>电话</div>
+        <input type="text" placeholder="姓名">
+    </section>
+    <!--Whether Same-->
+    <section class="ifSame">
+        <lable>默认微信与手机号是同步的</lable>
+        <span class="showWechat">不同步</span>
+    </section>
+    <!--Wechat-->
+    <section id="optional">
+        <div>微信</div>
+        <input type="text" placeholder="微信">
+    </section>
+    <!--Sex-->
+    <section>
+        <div>性别</div>
+        <article>
+            <div id="sex" class="resultBar">点击选择</div>
+            <ul id="sexlist"></ul>
+        </article>
+    </section>
+    <!--Grade-->
+    <section>
+        <div>年级</div>
+        <article>
+            <div id="grade" class="resultBar">点击选择</div>
+            <ul id="gradelist"></ul>
+        </article>
+    </section>
+    <!--institute-->
+    <section>
+        <div>学院</div>
+        <article>
+            <div id="xy" class="resultBar">点击选择</div>
+            <ul id="xylist"></ul>
+        </article>
+    </section>
+    <!--Whether agree-->
+    <lable id="join" value="">你的另一半是否参与？</lable>
+    <aside>
+        <div id="agree">参与</div>
+        <div id="disagree">不参与</div>
+    </aside>
+
+    <!--Submit-->
+    <section>
+        <button type="submit">提  交</button>
+
+    </section>
+</form>
+<footer>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

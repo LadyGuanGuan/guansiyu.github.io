@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'handwriting';
+    src: url("font.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+label{
+    display: block;
+}
+body{
+    font:.9em/1.5em "handwriting";
+    margin: 0;
+    width: 100vw;
+}
+header{
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 10px 10px 5px #888888;
+}
+header #headimg, header .info{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header #headimg{
+    display: block;
+    z-index: -1;
+}
+header .info{
+    background: #faecec;
+    z-index: 1;
+    display: none;
+}
+.info #icon{
+    position: absolute;
+    display: block;
+    width: 30px;
+    top: 0;bottom: 0;left: 0;right: 0;
+    margin: auto;
+}
+section ul{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+ul li{
+    list-style: none;
+    display: block;
+    line-height: 2.5em;
+    vertical-align: center ;
+}
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+input{
+    display: block;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 2.5em; /* for IE */
+    vertical-align: middle;
+    padding: 0 20px;
+}
+input:focus, textarea:focus ,.checking{
+    background   : rgba(0,0,0,.1);
+    border-radius: 5px;
+    outline      : none;
+}
+section{
+    margin:  20px 0;
+    display: flex;
+    flex-direction: row;
+}
+section div{
+    line-height: 2.5em; /* for IE */
+    vertical-align: middle;
+    width: 30%;
+    float: left;
+}
+section input,section article{
+    width: 70%;
+}
+section article div,section article ul{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+aside{
+    display: flex;
+}
+aside div{
+    width: 25%;
+    color: grey;
+    border: 2px solid grey;
+    border-radius: 20px;
+    line-height: 2em;
+    text-align: center;
+    margin-top: 20px;
+    margin-right:  20px ;
+}
+
+button{
+    width: 100%;
+    color: #ffffff;
+    background: black;
+    line-height: 2em;
+    border: none;
+}
+
+#optional{
+    display: none;
+}
+
+/*With JS*/
+
+.selected{
+    border: 3px solid #000000;
+    color: #000000;
+    font-weight: bold;
+    transition: border,color 1s;
+}
+.ifJoin{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.showWechat{
+    margin-left: 25px;
+    color: grey;
+}
+form{
+    position: relative;
+}
